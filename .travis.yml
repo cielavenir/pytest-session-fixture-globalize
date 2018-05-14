@@ -1,0 +1,12 @@
+language: python
+python:
+  - 2.7
+env:
+  matrix:
+    - TESTENV=py27-pytest32
+    - TESTENV=py33-pytest32
+    - TESTENV=py34-pytest32
+install:
+  - pip install -U tox
+script:
+  - tox --recreate -e $TESTENV
