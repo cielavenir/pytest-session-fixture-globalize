@@ -33,3 +33,4 @@ def pytest_configure(config):
 def pytest_unconfigure(config):
     if 'parsefactories_real' in FixtureManager.__dict__:
         FixtureManager.parsefactories = FixtureManager.parsefactories_real
+        del FixtureManager.parsefactories_real

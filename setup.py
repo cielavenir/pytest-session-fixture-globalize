@@ -4,7 +4,7 @@ setup(
     name='pytest-session-fixture-globalize',
     description='py.test plugin to make session fixtures behave as if written in conftest, even if it is written in some modules',
     long_description=open("README.md").read(),
-    version='0.0.0.1',
+    version='0.0.0.2',
     url='https://github.com/cielavenir/pytest-session-fixture-globalize',
     license='BSD',
     author='cielavenir',
