@@ -1,3 +1,7 @@
+### pytest-session-fixture-globalize (C) @cielavenir (BSD License)
+### if you want to use this feature without explicit enabling, you can embed this module into your conftest.py.
+### in such cases, this header must be retained.
+
 import os.path
 import pytest
 from _pytest.fixtures import FixtureManager
