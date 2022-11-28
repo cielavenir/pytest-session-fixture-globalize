@@ -8,7 +8,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        python-version: ['2.7', '3.5', '3.6', '3.7', 'pypy-2.7', 'pypy-3.7', 'pyston']
+        python-version: ['2.7', '3.5', '3.6']
         os: [ubuntu-latest]
         architecture: ["x64"]
         # include:
