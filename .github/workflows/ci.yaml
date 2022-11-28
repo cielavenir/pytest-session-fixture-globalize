@@ -11,7 +11,7 @@ jobs:
         python-version: ['2.7', '3.5', '3.6', '3.7', 'pypy-2.7', 'pypy-3.7', 'pyston']
         os: [ubuntu-latest]
         architecture: ["x64"]
-        include:
+        # include:
           #- python-version: '3.4'
           #  os: ubuntu-18.04
           #  architecture: "x64"
