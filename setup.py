@@ -1,16 +1,20 @@
 from setuptools import setup
 
+versionContext = {}
+with open('pytest_session_fixture_globalize/version.py') as f:
+    exec(f.read(), versionContext)
+
 setup(
     name='pytest-session-fixture-globalize',
     description='py.test plugin to make session fixtures behave as if written in conftest, even if it is written in some modules',
     long_description=open("README.md").read(),
-    version='0.0.0.3',
+    version=versionContext['__version__'],
     url='https://github.com/cielavenir/pytest-session-fixture-globalize',
     license='BSD',
     author='cielavenir',
     author_email='cielartisan@gmail.com',
-    py_modules=['pytest_session_fixture_globalize'],
-    entry_points={'pytest11': ['session_fixture_globalize = pytest_session_fixture_globalize']},
+    packages=['pytest_session_fixture_globalize'],
+    entry_points={'pytest11': ['session_fixture_globalize = pytest_session_fixture_globalize.pytest_session_fixture_globalize']},
     zip_safe=False,
     include_package_data=True,
     platforms='any',
